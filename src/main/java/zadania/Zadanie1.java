@@ -4,10 +4,10 @@ import java.sql.*;
 
 public class Zadanie1 {
 
-    public static void main(String[] args) throws ClassNotFoundException, IllegalAccessException, InstantiationException {
+    public static void main(String[] args) {
 
-        Class.forName("com.mysql.cj.jdbc.Driver").newInstance();
-    String url = "jdbc:mysql://localhost:3306/shop";
+
+    String url = "jdbc:mysql://localhost:3306/shop?serverTimezone=CET";
     String user = "root";
     String password = "test";
     String query = "SELECT * from country;";
