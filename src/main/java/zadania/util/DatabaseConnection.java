@@ -9,9 +9,9 @@ import java.sql.SQLException;
 public class DatabaseConnection implements Closeable {
         private static DatabaseConnection instance;
         private Connection connection;
-        String url = "jdbc:mysql://localhost:3306/shop?serverTimezone=CET";
+        String url = "jdbc:mysql://localhost:3308/shop?serverTimezone=CET";
         String user = "root";
-        String password = "test";
+        String password = null;
         public DatabaseConnection() {
             try {
                 this.connection = DriverManager.getConnection(url,user,password);

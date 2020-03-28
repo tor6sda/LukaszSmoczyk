@@ -7,9 +7,9 @@ public class Zadanie1 {
     public static void main(String[] args) {
 
 
-    String url = "jdbc:mysql://localhost:3306/shop?serverTimezone=CET";
+    String url = "jdbc:mysql://localhost:3308/shop?serverTimezone=CET";
     String user = "root";
-    String password = "test";
+    String password = null;
     String query = "SELECT * from country;";
         try (
     Connection connection = DriverManager.getConnection(url, user, password);
